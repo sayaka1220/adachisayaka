@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>愛知大学中国武術部</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/講師紹介.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<!--header-->
+	<header>
+		<div class="container">
+			<div class="header-logo"><a href="./愛知大学中国武術部.html">愛知大学中国武術部</a></div>
+			<div class="header-menu">
+			   <div id="nav-drawer">
+				  <input id="nav-input" type="checkbox" class="nav-unshown">
+				  <label id="nav-open" for="nav-input"><span></span></label>
+				  <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				  <div id="nav-content">
+						<a href="./愛知大学中国武術部.html">ホーム</a>
+						<a href="./中国武術とは.html">中国武術とは</a>
+						<a href="./練習内容.html">練習内容</a>
+						<a href="./部活動実績.html">部活動実績</a>
+						<a href="./講師紹介.html">講師紹介</a>
+						<a href="./よくあるご質問.html">よくあるご質問</a>
+				  </div>
+			   </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</header>
+	<!--header-->
+	
+	<!--main-->
+	<div class="main">
+		<h1>顧問・師範・コーチ紹介</h1>
+
+		<div class="main-txt">
+			<h2>■顧問</h2>
+			<h2>松岡弘記 先生</h2>
+			現代中国学部教授
+		</div>
+		<div class="main-txt">
+			<h2>■師範</h2>
+			<h2>張成忠 先生</h2>
+			南京体育大学客員教授<br>
+			<p>愛知大学非常勤講師国内外多くの大会で優勝し、49枚のメダルを獲得</p>
+			【経歴】<br>
+			1984　映画「岳家小将」の「金弾子」役で出演<br>
+			1987　横浜アジア大会槍術優勝<br>
+			1987　「武英級」の証書授与（日本の武道相撲界で言えば「横綱」級）<br>
+			1989　愛知大学の正課授業で武術指導を始める<br>
+			1995〜1996　「生活倉庫」のCMに出演<br>
+			1998　簡化24式太極拳テキスト出版<br>
+			1999　中国武術協会公認　武術七段の称号を得る<br>
+			2002　上海国際武術学会に論文を発表し高い評価を受け二等賞<br>
+			2002　自叙伝「道」を出版<br>
+			2003　上海にて武術に関する論文を発表し高い評価を受け二等賞<br>
+			2004　鄭州にて武術に関する論文を発表し高い評価を受け一等賞<br>
+			2008　中国中央電視台６チャンネル「流金歳月」ゲスト出演<br>
+			2009　DVD「気分向上」を出版<br>
+			2011　「張式養生呼吸法」発案<br>
+		</div>
+		<div class="main-txt">
+			<h2>■コーチ</h2>
+			<h2>原口昭教 先生</h2>
+			<p>全日本武術太極拳大会　長拳、剣術、槍術優勝</p>　
+			<h2>大島秀文 先生</h2>
+			<p>平成５年法学部卒</p>
+			<h2>松本佳林 先生</h2>
+			平成１９年現代中国学部卒
+		</div>
+	</div>
+	<!--main-->
+	
+	<!--footer-->
+	<footer>
+		<div class="footer-logo"><a href="./愛知大学中国武術部.html">愛知大学中国武術部</a></div>
+		<div class="footer-menu">
+			<a href="./愛知大学中国武術部.html">ホーム</a>
+			<a href="./中国武術とは.html">中国武術とは</a>
+			<a href="./練習内容.html">練習内容</a>
+			<a href="./部活動実績.html">部活動実績</a>
+			<a href="./講師紹介.html">講師紹介</a>
+			<a href="./よくあるご質問.html">よくあるご質問</a>
+		</div>
+		<div class="mail">
+			<!-- Replace name@website.com with your email address -->
+			<a href="mailto:chuugokubujutsu@yahoo.co.jp"><span class="fa fa-envelope"></span>お問い合わせはこちらまで</a>		
+		</div>
+		<div class="map">
+			【所在地】<br>〒453-8777<br>愛知県名古屋市中村区平池町4丁目60番6<br>愛知大学名古屋校舎厚生棟8階819号室<br>中国武術部
+		</div>
+		<p>@2020 AICHI UNIVERSITY WU SHU CLUB All rights reserved.</p>
+	</footer>
+	<!--footer-->
+	<p id="pageTop"><a href="#">　〈 Go to top.</a></p>
+	<!--scroll-->
+	<script>
+			//ボタン
+			$(function(){
+			var topBtn=$('#pageTop');
+			topBtn.hide();
+			//ボタンの表示設定
+			$(window).scroll(function(){
+			  if($(this).scrollTop()>300){
+			//----画面を300pxスクロールしたら、ボタンを表示する
+				topBtn.fadeIn();
+			  }else{
+			//----画面が300pxより上なら、ボタンを表示しない
+				topBtn.fadeOut();
+			  } 
+			});
+			//ボタンをクリックしたら、スクロールして上に戻る
+			topBtn.click(function(){
+			  $('body,html').animate({
+			  scrollTop: 0},500);
+			  return false;
+			});
+			});
+		</script>
+		<!--scroll-->
+</body>
+</html>
+

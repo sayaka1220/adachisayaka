@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>愛知大学中国武術部</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/よくあるご質問.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<!--header-->
+	<header>
+		<div class="container">
+			<div class="header-logo"><a href="./愛知大学中国武術部.html">愛知大学中国武術部</a></div>
+			<div class="header-menu">
+			   <div id="nav-drawer">
+				  <input id="nav-input" type="checkbox" class="nav-unshown">
+				  <label id="nav-open" for="nav-input"><span></span></label>
+				  <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				  <div id="nav-content">
+						<a href="./愛知大学中国武術部.html">ホーム</a>
+						<a href="./中国武術とは.html">中国武術とは</a>
+						<a href="./練習内容.html">練習内容</a>
+						<a href="./部活動実績.html">部活動実績</a>
+						<a href="./講師紹介.html">講師紹介</a>
+						<a href="./よくあるご質問.html">よくあるご質問</a>
+				  </div>
+			   </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</header>
+	<!--header-->
+	
+	<!--main-->
+	<div class="main">
+		<h1>よくあるご質問</h1>
+		<div class="main-txt">
+			Ｑ.中国武術に興味を持ちました。入部を考えていますが、どうしたらよいでしょうか？<br>
+			<p><span class="orange">Ａ.気軽に部室に来てください。いつでもお待ちしております(^.^)また、連絡してもらえれば詳細を説明しますよ(^O^)</span></p>
+		</div>
+		<div class="main-txt">
+			Ｑ.怪我等が心配なのですが、大丈夫でしょうか？<br>
+			<p><span class="orange">Ａ.まず、怪我をしないことが大事ではありますが怪我をしないために柔軟をしっかりしましょう！また、筋力をつけるということも怪我予防につながります！</span></p>
+		</div>
+		<div class="main-txt">
+			Ｑ.費用はどのくらいかかるのでしょうか？<br>
+			<p><span class="orange">Ａ.基本的にはかからないですが、合宿や打ち上げ等々があるのである程度の個人費用はかかると思ってください。</span></p>
+		</div>
+		<div class="main-txt">
+			Ｑ.他部やサークルとの兼部をしたいです。可能なのでしょうか？<br>
+			<p><span class="orange">Ａ.可能です(*^^)v実際、部員の子で兼部をしている子が何人かいます。どちらを優先するかは自分自身で決めてもらえればいいです。強制はしません。</span></p>
+		</div>
+		<div class="main-txt">
+			Ｑ.バイトや車校など、忙しくてなかなか練習に参加ができないかもしれないです。<br>
+			<p><span class="orange">Ａ.できないならできないなりにどう練習に参加したいかを考えましょう！分からなければ相談してください。いつでも受け付けますよ(*^^)v</span></p>
+		</div>
+		<div class="main-txt">
+			Ｑ.体が石のように硬いです・・・。<br>
+			<p><span class="orange">Ａ.安心してください。部員の大半が入った頃は体が硬かったです(^_^;)ですが、柔軟することで体が柔らかくなった子がたくさんいます！</span></p>
+		</div>
+	</div>
+	<!--main-->
+	
+	<!--footer-->
+	<footer>
+		<div class="footer-logo"><a href="./愛知大学中国武術部.html">愛知大学中国武術部</a></div>
+		<div class="footer-menu">
+			<a href="./愛知大学中国武術部.html">ホーム</a>
+			<a href="./中国武術とは.html">中国武術とは</a>
+			<a href="./練習内容.html">練習内容</a>
+			<a href="./部活動実績.html">部活動実績</a>
+			<a href="./講師紹介.html">講師紹介</a>
+			<a href="./よくあるご質問.html">よくあるご質問</a>
+		</div>
+		<div class="mail">
+			<!-- Replace name@website.com with your email address -->
+			<a href="mailto:chuugokubujutsu@yahoo.co.jp"><span class="fa fa-envelope"></span>お問い合わせはこちらまで</a>		
+		</div>
+		<div class="map">
+			【所在地】<br>〒453-8777<br>愛知県名古屋市中村区平池町4丁目60番6<br>愛知大学名古屋校舎厚生棟8階819号室<br>中国武術部
+		</div>
+		<p>@2020 AICHI UNIVERSITY WU SHU CLUB All rights reserved.</p>
+	</footer>
+	<!--footer-->
+	<p id="pageTop"><a href="#">　〈 Go to top.</a></p>
+	<!--scroll-->
+	<script>
+			//ボタン
+			$(function(){
+			var topBtn=$('#pageTop');
+			topBtn.hide();
+			//ボタンの表示設定
+			$(window).scroll(function(){
+			  if($(this).scrollTop()>300){
+			//----画面を300pxスクロールしたら、ボタンを表示する
+				topBtn.fadeIn();
+			  }else{
+			//----画面が300pxより上なら、ボタンを表示しない
+				topBtn.fadeOut();
+			  } 
+			});
+			//ボタンをクリックしたら、スクロールして上に戻る
+			topBtn.click(function(){
+			  $('body,html').animate({
+			  scrollTop: 0},500);
+			  return false;
+			});
+			});
+		</script>
+		<!--scroll-->
+</body>
+</html>
+
